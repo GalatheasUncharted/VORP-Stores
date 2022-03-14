@@ -18,7 +18,6 @@ namespace vorpstores_sv
         }
         private void buyItems([FromSource]Player source, string name, int quantity, double cost)
         {
-            Debug.WriteLine(m_MessageDuration.ToString());
             int _source = int.Parse(source.Handle);
 
             string sid = "steam:" + source.Identifiers["steam"];
