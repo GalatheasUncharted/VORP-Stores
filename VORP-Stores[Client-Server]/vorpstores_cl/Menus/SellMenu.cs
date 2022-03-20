@@ -93,7 +93,7 @@ namespace vorpstores_cl.Menus
                             quantityList.Add($"{GetConfig.Langs["Quantity"]} #{i}");
                         }
 
-                        MenuListItem _itemToSell = new MenuListItem(GetConfig.ItemsFromDB[item["Name"].ToString()]["label"].ToString() + $" ${item["BuySell"]}", quantityList, 0, "")
+                        MenuListItem _itemToSell = new MenuListItem(GetConfig.ItemsFromDB[item["Name"].ToString()]["label"].ToString() + $" ${item["SellPrice"]}", quantityList, 0, "")
                         {
 
                         };
@@ -114,7 +114,7 @@ namespace vorpstores_cl.Menus
                             quantityList.Add($"{GetConfig.Langs["Quantity"]} #{i}");
                         }
 
-                        MenuListItem _itemToSell = new MenuListItem(GetConfig.ItemsFromDB[item["Name"].ToString()]["label"].ToString() + $" ${item["BuySell"]}", quantityList, 0, "")
+                        MenuListItem _itemToSell = new MenuListItem(GetConfig.ItemsFromDB[item["Name"].ToString()]["label"].ToString() + $" ${item["SellPrice"]}", quantityList, 0, "")
                         {
 
                         };
